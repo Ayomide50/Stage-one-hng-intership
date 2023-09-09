@@ -1,0 +1,66 @@
+/* GOGGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Montserrat:wght@100;200;300;400;500&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #BEC9C8;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.first_image {
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 50);
+    transition: all 1.1s;
+}
+
+.first_image:hover {
+    transform: scale(1.2);
+}
+
+.second_section {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 768px)  {
+    .container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first_image {
+        height: 40vh;
+        cursor: pointer;
+        border-radius: 50px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 50);
+        transition: all 1.1s;
+    }
+
+    
+.second_section {
+    margin-top: 20px;
+}
+}
